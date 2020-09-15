@@ -2,7 +2,7 @@ import requests
 from repos import Repos
 
 def fetch_repos(username):
-
+    # all_repos = []
     URL = f'https://api.github.com/users/{username}/repos'
 
     ''' Call to API of Github '''

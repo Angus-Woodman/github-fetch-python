@@ -12,7 +12,7 @@ class Repos():
     #     return f'Behold, {self._name}'
 
     def _save(self):
-        self.all.append(self._name)
+        self.all.append(self)
 
     def get_name(self):
         return self._name
