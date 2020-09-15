@@ -1,5 +1,5 @@
 ### Github repository tracker python
 
-clone repo
+clone repo /n
 run pipenv shell
 run python app.py
