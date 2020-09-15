@@ -1,16 +1,16 @@
 import requests
 from repos import Repos
 
+def fetch_repos(username):
+    # all_repos = []
+    URL = f'https://api.github.com/users/{username}/repos'
 
-username = input("Enter your Github username:")
-
-URL = f'https://api.github.com/users/{username}/repos'
-
-def fetch_repos():
     ''' Call to API of Github '''
     req = requests.get(URL)
     for data in req.json():
-        x = Repos(data)
-        print(x.get_name())
+        Repos(data)
 
-fetch_repos()
+        # repo = Repos(data)
+        # print(repo.get_details())
+
+# fetch_repos()
