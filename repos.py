@@ -25,3 +25,7 @@ class Repos():
 
     def get_details(self):
         return [self._name, self._forks, self._language]
+
+    @classmethod
+    def find_by_input(cls, user_input):
+        return cls.all[int(user_input)-1]
