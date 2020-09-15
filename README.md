@@ -1,1 +1,5 @@
-### Github repository tracker python 
+### Github repository tracker python
+
+clone repo
+run pipenv shell
+run python app.py
